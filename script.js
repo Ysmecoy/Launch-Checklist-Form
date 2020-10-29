@@ -43,13 +43,15 @@
         faultyItems.style.visibility = 'hidden';
         launchStatus.style.color = 'black';
         launchStatus.innerHTML = 'Awaiting Information Before Launch';
+       
    }
 
-   if(isNaN(fuelLevelInput.value)|| isNaN(cargoMassInput.value)||!isNaN(pilotNameInput.value )||!isNaN(copilotNameInput.value) ) {
+  else if(isNaN(fuelLevelInput.value)|| isNaN(cargoMassInput.value)||!isNaN(pilotNameInput.value )||!isNaN(copilotNameInput.value) ) {
          alert('Make sure to enter valid information for each field');
          faultyItems.style.visibility = 'hidden';
          launchStatus.style.color = 'black';
          launchStatus.innerHTML = 'Awaiting Information Before Launch';
+       
         } else {
 
       faultyItems.style.visibility = 'visible';
